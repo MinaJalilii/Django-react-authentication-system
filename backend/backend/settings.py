@@ -170,3 +170,11 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_OBTAIN_SERIALIZER": "rest_framework_simplejwt.serializers.TokenObtainSlidingSerializer",
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
+CORS_ALLOWED_ORIGINS = [
+    # Add the allowed origins (domains) for CORS requests
+    'http://localhost:3000',  # Example: React frontend
+    # Add more origins as needed
+]
+
+# Optional: Allow credentials (cookies, authorization headers) to be included in CORS requests
+CORS_ALLOW_CREDENTIALS = True
