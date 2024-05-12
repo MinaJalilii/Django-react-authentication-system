@@ -12,12 +12,6 @@ function Registerpage() {
 
   const {registerUser} = useContext(AuthContext)
 
-  console.log(email);
-  console.log(username);
-  console.log(password);
-  console.log(password2);
-
-
   const handleSubmit = async e => {
     e.preventDefault()
     registerUser(email, username, password, password2)
@@ -50,7 +44,7 @@ function Registerpage() {
                               style={{ color: "#ff6219" }}
                             />
                             <span className="h2 fw-bold mb-0">
-                              Welcome to <b>Desphixs👋</b>
+                              Welcome to <b>👋</b>
                             </span>
                           </div>
                           <h5
