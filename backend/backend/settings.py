@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nvijw5okpt=uaq+racs)(b_8wkn0jn8lm_3gu3&5^kke6=5*i@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://jwt-authentication-indol.vercel.app/']
 
 # Application definition
 
@@ -172,7 +172,7 @@ SIMPLE_JWT = {
 }
 CORS_ALLOWED_ORIGINS = [
     # Add the allowed origins (domains) for CORS requests
-    'http://localhost:3000',  # Example: React frontend
+    'https://jwt-authentication-indol.vercel.app/',  # Example: React frontend
     # Add more origins as needed
 ]
 
