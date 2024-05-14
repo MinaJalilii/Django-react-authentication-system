@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     const history = useHistory();
 
     const loginUser = async (email, password) => {
-        const response = await fetch("https://jwt-authentication-5j920jdc7-minas-projects-994e9b8f.vercel.app/api/token/", {
+        const response = await fetch("https://jwt-authentication-indol.vercel.app/api/token/", {
             method: "POST",
             headers:{
                 "Content-Type":"application/json"
@@ -71,7 +71,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const registerUser = async (email, username, password, password2) => {
-        const response = await fetch("https://jwt-authentication-5j920jdc7-minas-projects-994e9b8f.vercel.app/api/register/", {
+        const response = await fetch("https://jwt-authentication-indol.vercel.app/api/register/", {
             method: "POST",
             headers: {
                 "Content-Type":"application/json"
