@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 
-const baseURL = "https://jwt-authentication-indol.vercel.app/api";
+const baseURL = "https://django-react-authentication-system.vercel.app/api";
 
 const useAxios = () => {
   const { authTokens, setUser, setAuthTokens } = useContext(AuthContext);
