@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     const history = useHistory();
 
     const loginUser = async (email, password) => {
-        const response = await fetch("http://djagnojwtauthentication.pythonanywhere.com/api/token/", {
+        const response = await fetch("https://djagnojwtauthentication.pythonanywhere.com/api/token/", {
             method: "POST",
             headers:{
                 "Content-Type":"application/json"
@@ -71,7 +71,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const registerUser = async (email, username, password, password2) => {
-        const response = await fetch("http://djagnojwtauthentication.pythonanywhere.com/api/register/", {
+        const response = await fetch("https://djagnojwtauthentication.pythonanywhere.com/api/register/", {
             method: "POST",
             headers: {
                 "Content-Type":"application/json"
