@@ -22,7 +22,6 @@ function Dashboard() {
           const response = await api.get("/test/")
           setRes(response.data.response)
         } catch (error) {
-          console.log(error);
           setRes("Something went wrong")
         }
       }
@@ -36,7 +35,6 @@ function Dashboard() {
           const response = await api.post("/test/")
           setRes(response.data.response)
         } catch (error) {
-          console.log(error);
           setRes("Something went wrong")
         }
       }

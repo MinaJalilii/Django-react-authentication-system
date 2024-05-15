@@ -37,10 +37,8 @@ export const AuthProvider = ({ children }) => {
             })
         })
         const data = await response.json()
-        console.log(data);
 
         if(response.status === 200){
-            console.log("Logged In");
             setAuthTokens(data)
             setUser(jwt_decode(data.access))
             localStorage.setItem("authTokens", JSON.stringify(data))
@@ -56,8 +54,6 @@ export const AuthProvider = ({ children }) => {
             })
 
         } else {    
-            console.log(response.status);
-            console.log("there was a server issue");
             swal.fire({
                 title: "Username or passowrd does not exists",
                 icon: "error",
@@ -92,8 +88,6 @@ export const AuthProvider = ({ children }) => {
                 showConfirmButton: false,
             })
         } else {
-            console.log(response.status);
-            console.log("there was a server issue");
             swal.fire({
                 title: "An Error Occured " + response.status,
                 icon: "error",
