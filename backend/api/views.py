@@ -9,6 +9,7 @@ from rest_framework.response import Response
 
 
 class MyTokenObtainPairView(TokenObtainPairView):
+    permission_classes = (AllowAny,)
     serializer_class = MyTokenObtainPairSerializer
 
 
@@ -31,7 +32,7 @@ def get_routes(request):
 
 
 @api_view(['GET', 'POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([AllowAny])
 def test_end_point(request):
     if request.method == 'GET':
         data = f"Congratulation {request.user}, your API just responded to GET request"
