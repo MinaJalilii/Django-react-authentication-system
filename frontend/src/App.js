@@ -1,7 +1,6 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from 'react'
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import PrivateRoute from "./utils/PrivateRoute"
 import { AuthProvider } from './context/AuthContext'
 
@@ -17,12 +16,7 @@ function App() {
   return (
     <Router>
       <AuthProvider>
-        {/* Wrap everything with Helmet for app-wide meta tags */}
-        <Helmet>
-          <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
-          <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;" />
-        </Helmet>
-        <Navbar/>
+        < Navbar/>
         <Switch>
           <PrivateRoute component={Dashboard} path="/dashboard" exact />
           <Route component={Loginpage} path="/login" />
@@ -34,4 +28,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
