@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nvijw5okpt=uaq+racs)(b_8wkn0jn8lm_3gu3&5^kke6=5*i@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://django-react-authentication-system.vercel.app']
+ALLOWED_HOSTS = ['https://djagnojwtauthentication.pythonanywhere.com']
 
 # Application definition
 
@@ -172,9 +172,6 @@ SIMPLE_JWT = {
 }
 CORS_ALLOWED_ORIGINS = [
     'https://django-react-authentication-system.vercel.app',
-    'https://django-react-authentication-system.vercel.app/api/register',
-    'https://django-react-authentication-system.vercel.app/api',
-    'https://django-react-authentication-system.vercel.app/api/login',
 ]
 
 # Optional: Allow credentials (cookies, authorization headers) to be included in CORS requests
