@@ -172,6 +172,7 @@ SIMPLE_JWT = {
 }
 CORS_ALLOWED_ORIGINS = [
     'https://django-react-authentication-system.vercel.app',
+    'https://djagnojwtauthentication.pythonanywhere.com',
 ]
 
 # Optional: Allow credentials (cookies, authorization headers) to be included in CORS requests
